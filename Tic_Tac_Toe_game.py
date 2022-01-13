@@ -115,7 +115,7 @@ def main():
     while not (isBoardFull(board)):
         if not (isWinner(board, 'O')):
             playerMove()
-            printBoard(board)
+            #printBoard(board)
         else:
             print('Sorry!, ' + name + ' computer\'s won this match :(')
             #com_score+=1
