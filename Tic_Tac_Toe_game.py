@@ -117,8 +117,8 @@ def main():
             playerMove()
             #printBoard(board)
         else:
-            print('Sorry!, ' + name + ' computer\'s won this match :(')
-            #com_score+=1
+            print()
+            print('Sorry!, ' + name + ' computer won this match :(')
             break
 
         if not (isWinner(board, 'X')):
@@ -132,8 +132,9 @@ def main():
                 printBoard(board)
 
         else:
+            print()
             print('You won this match:)..Good job ' + name)
-            #your_score+=1
+            print()
             break
 
     if isBoardFull(board):
@@ -142,6 +143,7 @@ def main():
 
 a = True
 name = input('Type your name here: ')
+print()
 
 
 while (a):
@@ -154,7 +156,7 @@ while (a):
         main()
         
     else:
-
+        print()
         print('Hope you are enjoying it a lot....See you again ' + name + ':)')
         quit()
 
